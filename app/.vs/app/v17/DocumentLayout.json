@@ -1,0 +1,171 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|c:\\college\\ready\\tehdos\\sm2\\\u0432\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0434\u044D24_25\\app\\app\\editpartnerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|solutionrelative:app\\editpartnerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\addpartnerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|solutionrelative:app\\addpartnerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\partnerspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|solutionrelative:app\\partnerspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\partnerspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|solutionrelative:app\\partnerspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|c:\\college\\ready\\tehdos\\sm2\\\u0432\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0434\u044D24_25\\app\\app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|solutionrelative:app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|solutionrelative:app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|c:\\college\\ready\\tehdos\\sm2\\\u0432\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0434\u044D24_25\\app\\app\\editpartnerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|solutionrelative:app\\editpartnerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\addpartnerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|solutionrelative:app\\addpartnerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92BF6BBD-C406-4E5B-B99A-E23DF396D141}|app\\app.csproj|solutionrelative:app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditPartnerPage.xaml",
+              "DocumentMoniker": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\EditPartnerPage.xaml",
+              "RelativeDocumentMoniker": "app\\EditPartnerPage.xaml",
+              "ToolTip": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\EditPartnerPage.xaml",
+              "RelativeToolTip": "app\\EditPartnerPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-15T07:29:00.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddPartnerPage.xaml",
+              "DocumentMoniker": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\AddPartnerPage.xaml",
+              "RelativeDocumentMoniker": "app\\AddPartnerPage.xaml",
+              "ToolTip": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\AddPartnerPage.xaml",
+              "RelativeToolTip": "app\\AddPartnerPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-13T10:28:54.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PartnersPage.xaml.cs",
+              "DocumentMoniker": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\PartnersPage.xaml.cs",
+              "RelativeDocumentMoniker": "app\\PartnersPage.xaml.cs",
+              "ToolTip": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\PartnersPage.xaml.cs",
+              "RelativeToolTip": "app\\PartnersPage.xaml.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAgwGgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:19:03.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PartnersPage.xaml",
+              "DocumentMoniker": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\PartnersPage.xaml",
+              "RelativeDocumentMoniker": "app\\PartnersPage.xaml",
+              "ToolTip": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\PartnersPage.xaml",
+              "RelativeToolTip": "app\\PartnersPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-12T07:09:49.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "app\\MainWindow.xaml",
+              "ToolTip": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\MainWindow.xaml",
+              "RelativeToolTip": "app\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-11T07:12:39.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "app\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\MainWindow.xaml.cs",
+              "RelativeToolTip": "app\\MainWindow.xaml.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAApwEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T07:12:39.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditPartnerPage.xaml.cs",
+              "DocumentMoniker": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\EditPartnerPage.xaml.cs",
+              "RelativeDocumentMoniker": "app\\EditPartnerPage.xaml.cs",
+              "ToolTip": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\EditPartnerPage.xaml.cs",
+              "RelativeToolTip": "app\\EditPartnerPage.xaml.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAQwDgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T07:29:15.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddPartnerPage.xaml.cs",
+              "DocumentMoniker": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\AddPartnerPage.xaml.cs",
+              "RelativeDocumentMoniker": "app\\AddPartnerPage.xaml.cs",
+              "ToolTip": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\AddPartnerPage.xaml.cs",
+              "RelativeToolTip": "app\\AddPartnerPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T10:30:13.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\App.xaml",
+              "RelativeDocumentMoniker": "app\\App.xaml",
+              "ToolTip": "C:\\college\\Ready\\TehDos\\sm2\\\u0412\u0430\u0440\u0438\u0430\u043D\u0442 24.25\\\u0414\u042D24_25\\app\\app\\App.xaml",
+              "RelativeToolTip": "app\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-14T09:18:22.652Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

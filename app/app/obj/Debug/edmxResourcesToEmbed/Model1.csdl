@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Demo1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Партнеры">
+    <Key>
+      <PropertyRef Name="id_партнера" />
+    </Key>
+    <Property Name="id_партнера" Type="Int32" Nullable="false" />
+    <Property Name="Наименование_партнера" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="id_типа_партнера" Type="Int32" Nullable="false" />
+    <Property Name="Директор" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Электронная_почта_партнера" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Телефон_партнера" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Юридический_адрес_партнера" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ИНН" Type="Int64" Nullable="false" />
+    <Property Name="Рейтинг" Type="Byte" Nullable="false" />
+    <Property Name="Скидка_партнера" Type="Int32" />
+    <NavigationProperty Name="ТипПартнера" Relationship="Self.FK_Партнеры_ТипПартнера" FromRole="Партнеры" ToRole="ТипПартнера" />
+    <NavigationProperty Name="РеализацияПродуктов" Relationship="Self.FK_РеализацияПродуктов_Партнеры" FromRole="Партнеры" ToRole="РеализацияПродуктов" />
+  </EntityType>
+  <EntityType Name="Продукция">
+    <Key>
+      <PropertyRef Name="id_продукта" />
+    </Key>
+    <Property Name="id_продукта" Type="Int32" Nullable="false" />
+    <Property Name="Наименование_продукта" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Артикул" Type="Int32" Nullable="false" />
+    <Property Name="Минимальная_стоимость_для_партнера" Type="Double" Nullable="false" />
+    <Property Name="id_типа_продукции" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ТипПродукции" Relationship="Self.FK_Продукция_ТипПродукции" FromRole="Продукция" ToRole="ТипПродукции" />
+    <NavigationProperty Name="РеализацияПродуктов" Relationship="Self.FK_РеализацияПродуктов_Продукция" FromRole="Продукция" ToRole="РеализацияПродуктов" />
+  </EntityType>
+  <EntityType Name="РеализацияПродуктов">
+    <Key>
+      <PropertyRef Name="id_реализации" />
+    </Key>
+    <Property Name="id_реализации" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="id_партнера" Type="Int32" />
+    <Property Name="id_продукции" Type="Int32" />
+    <Property Name="Количество" Type="Int32" />
+    <NavigationProperty Name="Партнеры" Relationship="Self.FK_РеализацияПродуктов_Партнеры" FromRole="РеализацияПродуктов" ToRole="Партнеры" />
+    <NavigationProperty Name="Продукция" Relationship="Self.FK_РеализацияПродуктов_Продукция" FromRole="РеализацияПродуктов" ToRole="Продукция" />
+  </EntityType>
+  <EntityType Name="ТипПартнера">
+    <Key>
+      <PropertyRef Name="id_типа_партнера" />
+    </Key>
+    <Property Name="id_типа_партнера" Type="Int32" Nullable="false" />
+    <Property Name="Тип_партнера" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Партнеры" Relationship="Self.FK_Партнеры_ТипПартнера" FromRole="ТипПартнера" ToRole="Партнеры" />
+  </EntityType>
+  <EntityType Name="ТипПродукции">
+    <Key>
+      <PropertyRef Name="id_типа_продукции" />
+    </Key>
+    <Property Name="id_типа_продукции" Type="Int32" Nullable="false" />
+    <Property Name="Наименование_продукции" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Коэффициент_типа_продукции" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="Продукция" Relationship="Self.FK_Продукция_ТипПродукции" FromRole="ТипПродукции" ToRole="Продукция" />
+  </EntityType>
+  <EntityType Name="ТипыМатериалов">
+    <Key>
+      <PropertyRef Name="id_типа_материала" />
+    </Key>
+    <Property Name="id_типа_материала" Type="Byte" Nullable="false" />
+    <Property Name="Процент_брака_материала" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Партнеры_ТипПартнера">
+    <End Role="ТипПартнера" Type="Self.ТипПартнера" Multiplicity="1" />
+    <End Role="Партнеры" Type="Self.Партнеры" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ТипПартнера">
+        <PropertyRef Name="id_типа_партнера" />
+      </Principal>
+      <Dependent Role="Партнеры">
+        <PropertyRef Name="id_типа_партнера" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_РеализацияПродуктов_Партнеры">
+    <End Role="Партнеры" Type="Self.Партнеры" Multiplicity="0..1" />
+    <End Role="РеализацияПродуктов" Type="Self.РеализацияПродуктов" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Партнеры">
+        <PropertyRef Name="id_партнера" />
+      </Principal>
+      <Dependent Role="РеализацияПродуктов">
+        <PropertyRef Name="id_партнера" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Продукция_ТипПродукции">
+    <End Role="ТипПродукции" Type="Self.ТипПродукции" Multiplicity="1" />
+    <End Role="Продукция" Type="Self.Продукция" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ТипПродукции">
+        <PropertyRef Name="id_типа_продукции" />
+      </Principal>
+      <Dependent Role="Продукция">
+        <PropertyRef Name="id_типа_продукции" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_РеализацияПродуктов_Продукция">
+    <End Role="Продукция" Type="Self.Продукция" Multiplicity="0..1" />
+    <End Role="РеализацияПродуктов" Type="Self.РеализацияПродуктов" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Продукция">
+        <PropertyRef Name="id_продукта" />
+      </Principal>
+      <Dependent Role="РеализацияПродуктов">
+        <PropertyRef Name="id_продукции" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Demo1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Партнеры" EntityType="Self.Партнеры" />
+    <EntitySet Name="Продукция" EntityType="Self.Продукция" />
+    <EntitySet Name="РеализацияПродуктов" EntityType="Self.РеализацияПродуктов" />
+    <EntitySet Name="ТипПартнера" EntityType="Self.ТипПартнера" />
+    <EntitySet Name="ТипПродукции" EntityType="Self.ТипПродукции" />
+    <EntitySet Name="ТипыМатериалов" EntityType="Self.ТипыМатериалов" />
+    <AssociationSet Name="FK_Партнеры_ТипПартнера" Association="Self.FK_Партнеры_ТипПартнера">
+      <End Role="ТипПартнера" EntitySet="ТипПартнера" />
+      <End Role="Партнеры" EntitySet="Партнеры" />
+    </AssociationSet>
+    <AssociationSet Name="FK_РеализацияПродуктов_Партнеры" Association="Self.FK_РеализацияПродуктов_Партнеры">
+      <End Role="Партнеры" EntitySet="Партнеры" />
+      <End Role="РеализацияПродуктов" EntitySet="РеализацияПродуктов" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Продукция_ТипПродукции" Association="Self.FK_Продукция_ТипПродукции">
+      <End Role="ТипПродукции" EntitySet="ТипПродукции" />
+      <End Role="Продукция" EntitySet="Продукция" />
+    </AssociationSet>
+    <AssociationSet Name="FK_РеализацияПродуктов_Продукция" Association="Self.FK_РеализацияПродуктов_Продукция">
+      <End Role="Продукция" EntitySet="Продукция" />
+      <End Role="РеализацияПродуктов" EntitySet="РеализацияПродуктов" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

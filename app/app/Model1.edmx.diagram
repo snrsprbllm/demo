@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d4db6340d05646978c67ff21cab82509" Name="Diagram1">
+        <EntityTypeShape EntityType="Demo1Model.Партнеры" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo1Model.Продукция" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo1Model.РеализацияПродуктов" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo1Model.ТипПартнера" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo1Model.ТипПродукции" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Demo1Model.ТипыМатериалов" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="Demo1Model.FK_Партнеры_ТипПартнера" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo1Model.FK_РеализацияПродуктов_Партнеры" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo1Model.FK_Продукция_ТипПродукции" ManuallyRouted="false" />
+        <AssociationConnector Association="Demo1Model.FK_РеализацияПродуктов_Продукция" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

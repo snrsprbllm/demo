@@ -1,0 +1,54 @@
+﻿<Window x:Class="app.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Главный экран" Height="550" Width="650"
+        Background="{StaticResource MainBackgroundBrush}">
+    <Window.Resources>
+        <Style x:Key="MainTextStyle" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Шапка -->
+        <Border Grid.Row="0" Background="{StaticResource AccentBrush}" Padding="10">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Image Source="pack://application:,,,/Properties/Мастер пол.png" Width="50" Height="50"/>
+                <TextBlock Text="Система управления партнерами" 
+                           Foreground="White" 
+                           VerticalAlignment="Center" 
+                           Margin="10,0,0,0" 
+                           FontSize="16" 
+                           Style="{StaticResource MainTextStyle}"/>
+
+                <!-- Кнопка "На главную" -->
+                <Button Content="На главную" 
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Stretch"
+                        Click="GoToMain_Click" 
+                        Margin="25,5,0,0" 
+                        Background="Transparent" 
+                        Foreground="White" 
+                        BorderBrush="Transparent"
+                        FontStyle="Normal"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Контент с ScrollViewer -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <StackPanel Margin="20">
+                <Button Content="Список партнеров" Margin="0,10,0,5" Click="ShowPartners_Click"/>
+                <Button Content="Добавить партнера" Margin="0,5,0,5" Click="AddPartner_Click"/>
+                <Button Content="История реализации партнера" Margin="0,5,0,5" Click="ShowPartnerHistory_Click"/>
+                <Button Content="Выход" Margin="0,5,0,0" Click="Exit_Click"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Frame для навигации -->
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden" Navigated="MainFrame_Navigated"/>
+    </Grid>
+</Window>
