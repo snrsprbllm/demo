@@ -35,13 +35,15 @@
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <!-- Карточка партнера -->
+                        <!-- Карточка партнера -->
+                        <!-- Карточка партнера -->
                         <Border BorderBrush="Gray" BorderThickness="1" Margin="10" Padding="10" Background="{StaticResource MainBackgroundBrush}">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
                                     <!-- Наименование партнера -->
                                     <RowDefinition Height="Auto"/>
-                                    <!-- Директор -->
+                                    <!-- Тип партнера и Директор -->
                                     <RowDefinition Height="Auto"/>
                                     <!-- Телефон и email -->
                                     <RowDefinition Height="Auto"/>
@@ -54,33 +56,38 @@
 
                                 <!-- Наименование партнера -->
                                 <TextBlock Text="{Binding Наименование_партнера, TargetNullValue='Партнер не указан'}" 
-                                           Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
-                                           FontWeight="Bold" FontSize="14" Style="{StaticResource MainTextStyle}" />
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                   FontWeight="Bold" FontSize="14" Style="{StaticResource MainTextStyle}" />
 
-                                <!-- Директор -->
-                                <TextBlock Text="{Binding Директор, StringFormat='Директор: {0}'}" 
-                                           Grid.Row="1" Grid.Column="0"
-                                           Margin="0,5" Style="{StaticResource MainTextStyle}" />
+                                <!-- Тип партнера и Директор -->
+                                <TextBlock Grid.Row="1" Grid.Column="0">
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat="Тип: {0} | Директор: {1}">
+                                            <Binding Path="ТипПартнера.Тип_партнера" TargetNullValue="Не указан"/>
+                                            <Binding Path="Директор" TargetNullValue="Не указан"/>
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
 
                                 <!-- Телефон -->
                                 <TextBlock Text="{Binding Телефон_партнера, StringFormat='Телефон: {0}'}" 
-                                           Grid.Row="2" Grid.Column="0"
-                                           Margin="0,5" Style="{StaticResource MainTextStyle}" />
+                   Grid.Row="2" Grid.Column="0"
+                   Margin="0,5" Style="{StaticResource MainTextStyle}" />
 
                                 <!-- Email -->
                                 <TextBlock Text="{Binding Электронная_почта_партнера, StringFormat='Email: {0}'}" 
-                                           Grid.Row="2" Grid.Column="1"
-                                           Margin="10,5" HorizontalAlignment="Right" Style="{StaticResource MainTextStyle}" />
+                   Grid.Row="2" Grid.Column="1"
+                   Margin="10,5" HorizontalAlignment="Right" Style="{StaticResource MainTextStyle}" />
 
                                 <!-- Кнопка "Редактировать" -->
                                 <Button Content="Редактировать" 
-                                        Click="EditPartner_Click" 
-                                        Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
-                                        HorizontalAlignment="Right" 
-                                        Margin="0,10,0,0" 
-                                        Padding="10,5" 
-                                        Background="{StaticResource AccentBrush}" 
-                                        Foreground="White" />
+                Click="EditPartner_Click" 
+                Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                HorizontalAlignment="Right" 
+                Margin="0,10,0,0" 
+                Padding="10,5" 
+                Background="{StaticResource AccentBrush}" 
+                Foreground="White" />
                             </Grid>
                         </Border>
                     </DataTemplate>
@@ -89,3 +96,4 @@
         </Grid>
     </ScrollViewer>
 </UserControl>
+    

@@ -25,7 +25,7 @@ namespace app
         private void LoadPartnerTypes()
         {
             var partnerTypes = _context.ТипПартнера.ToList();
-            TypeComboBox.ItemsSource = partnerTypes;
+            //TypeComboBox.ItemsSource = partnerTypes;
         }
 
         private void AddPartner_Click(object sender, RoutedEventArgs e)
@@ -45,7 +45,7 @@ namespace app
                     ИНН = long.Parse(INNTextBox.Text),
                     Рейтинг = byte.Parse(RatingTextBox.Text),
                     Скидка_партнера = int.Parse(DiscountTextBox.Text),
-                    id_типа_партнера = (int)TypeComboBox.SelectedValue
+                   // id_типа_партнера = (int)TypeComboBox.SelectedValue
                 };
 
                 _context.Партнеры.Add(newPartner);
