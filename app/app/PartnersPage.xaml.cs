@@ -37,6 +37,7 @@ namespace app
                 {
                     Partners.Add(partner);
                 }
+                 PartnersItemsControl.ItemsSource = Partners;
             }
             catch (Exception ex)
             {
