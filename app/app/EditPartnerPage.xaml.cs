@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -27,6 +28,30 @@ namespace app
             INNTextBox.Text = _partner.ИНН.ToString();
             RatingTextBox.Text = _partner.Рейтинг.ToString();
             DiscountTextBox.Text = _partner.Скидка_партнера.ToString();
+
+            // Загрузка типов партнеров
+            LoadPartnersTypes(_partner.id_типа_партнера);
+        }
+
+        private void LoadPartnersTypes(int selectedTypeId)
+        {
+            try
+            {
+                var partnerTypes = _context.ТипПартнера.ToList();
+                TypeComboBox.ItemsSource = partnerTypes;
+                TypeComboBox.DisplayMemberPath = "Тип_партнера";
+                TypeComboBox.SelectedValuePath = "id_типа_партнера";
+
+                // Устанавливаем выбранный тип партнера
+                if (partnerTypes.Any())
+                {
+                    TypeComboBox.SelectedValue = selectedTypeId;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка загрузки типов партнеров: {ex.Message}");
+            }
         }
 
         private void SaveChanges_Click(object sender, RoutedEventArgs e)
@@ -42,6 +67,9 @@ namespace app
                 _partner.ИНН = long.Parse(INNTextBox.Text);
                 _partner.Рейтинг = byte.Parse(RatingTextBox.Text);
                 _partner.Скидка_партнера = int.Parse(DiscountTextBox.Text);
+
+                // Обновляем тип партнера
+                _partner.id_типа_партнера = (int)TypeComboBox.SelectedValue;
 
                 // Сохраняем изменения в базе данных
                 _context.SaveChanges();
